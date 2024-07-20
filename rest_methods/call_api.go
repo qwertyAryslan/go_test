@@ -10,7 +10,7 @@ import (
 	"strconv"
 )
 
-func Get_method() {
+func GetMethod() {
 	url := "https://api.restful-api.dev/objects"
 
 	//request
@@ -29,7 +29,7 @@ func Get_method() {
 	fmt.Println(string(body))
 }
 
-func Get_method_by_id(id int) {
+func GetMethodById(id int) {
 	url := "https://api.restful-api.dev/objects?id=" + strconv.Itoa(id)
 
 	//request
@@ -48,7 +48,7 @@ func Get_method_by_id(id int) {
 	fmt.Println(string(body))
 }
 
-func Post_method(name string, year int, price float32, cpu string, hd string) {
+func PostMethod(name string, year int, price float32, cpu string, hd string) {
 	url := "https://api.restful-api.dev/objects"
 
 	// Create the data to be sent in the POST request
@@ -94,7 +94,7 @@ func Post_method(name string, year int, price float32, cpu string, hd string) {
 	fmt.Println("Response Body:", responseBody.String())
 }
 
-func Put_method(name string, year int, price float32, cpu string, hd string, color string) {
+func PutMethod(name string, year int, price float32, cpu string, hd string, color string) {
 	url := "https://api.restful-api.dev/objects/7"
 
 	// Create the data to be sent in the POST request

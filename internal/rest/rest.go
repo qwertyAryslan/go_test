@@ -1,4 +1,4 @@
-package call_api
+package rest
 
 import (
 	"bytes"
